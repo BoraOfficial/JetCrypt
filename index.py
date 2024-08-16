@@ -11,8 +11,10 @@ from Crypto.Hash import SHA512
 """
  - this should not be used as its inefficient in large numbers
 
-def modExp0(x, y, z):
+def modExponent(x, y, z):
     return math.fmod(math.pow(x, y), z) #x^y mod z
+
+ - instead use this function on the bottom
 """
 
 def modExponent(x, y, z):
